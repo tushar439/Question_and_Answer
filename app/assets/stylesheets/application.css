@@ -1,0 +1,235 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ *{
+ 	padding: 0;
+ 	margin :0;
+ }
+
+#header one{
+	display:flex;	
+
+	justify-content:space-between;
+	flex-direction:column;
+	
+
+}
+#size
+{
+	width: 200px; 
+}
+
+#header one h2{
+	padding-top: 5px;
+}
+
+#header-logo
+{height: 20%;
+	width: 20%;
+	overflow: hidden;
+
+}
+/*#details{
+	padding-top: 10%;
+}*/
+
+
+
+#sign-up-box{
+	position: absolute;
+	background-color:white;
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+	flex-direction:column;
+	height: 60%;
+	width: 48%;
+	left: 26%;
+	top: 15%;
+	z-index: 1;
+	border: transparent;
+}
+
+#sign-in-page-quora-image{
+	width: 35%;
+}
+#sign-in-box-inner{
+	
+	height: 100%;
+	width: 90%;
+	border: solid thin;
+	border-radius: 4px 4px 4px 4px;
+	border-color: #bbbcbf;
+	display: flex;
+	flex-direction:column;
+	padding: 5% 5% 5% 5%;
+	align-items:center;
+	justify-content:space-around;
+}
+#question
+{
+	background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/02/High-Res-5-Wrinkled-Poster-Backgrounds-600x1359.jpg');
+	background-size:100% 100%; 
+	
+
+	display: flex;
+	flex-direction:column;
+	
+	align-items:center;
+	justify-content:space-around;
+}
+#question1
+{
+	color: white;
+}
+#question2
+{
+	color:yellow;
+}
+#hello{
+	background-image: url('http://apod.nasa.gov/apod/image/1611/HeartSoul_Lindemann_1280.jpg');
+display: flex;
+flex-direction:row;
+	
+	align-items:center;
+	justify-content:space-around;
+	
+}
+/*#sign-in-with-apis{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#sign-in-with-facebook{
+	padding: 4% 4% 4% 4%;
+	text-align: center;
+	background-color: red;
+
+
+}*/
+#feed-head{
+	margin: 4% 3% 4% 4%;
+	border-bottom: solid thin #dee0e2; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #333;
+}
+#feeds-list{
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #999;
+}
+#aside-section a {
+	text-decoration: none;
+}
+#content-block:hover{
+	background-color: #f2efef;
+}
+#content-block{
+	padding-left: 2%;
+}
+div{
+	text-transform: capitalize;
+}
+#block-secondary-content{
+	margin-top: 3%;
+	display: flex;
+	font-size: 80%;
+	justify-content:space-between;
+	align-items:center;
+	width: 24vw;
+}
+#give-answer{
+
+	background-color: #c1d8ef;
+	border-radius: 10% 10% 10% 10%;
+	/*color: #2b6dad;*/
+	padding : 2% 2% 2% 2%;
+
+}
+#block-secondary-content a{
+	color: #999;
+}
+.follow-question{
+	display: flex;
+	align-items:center;
+}
+.question-follow-numbers{
+	margin-left: 20%;
+	background-color: #eee;
+	padding: 2px 2px 2px 2px;
+	color: #999;
+	font-weight: bold;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+#question-page{
+	margin: 2% 3.5% 0% 15%;
+	display: inline-block;
+	padding-bottom: 1%;
+	border-bottom: solid thin;
+	border-color: #dee0e2;
+	vertical-align: top;
+	width: 43%;
+}
+#question-page #question{
+	font-weight: bold;
+	font-size: 180%;
+}
+#question-page-main-section{
+	margin-top: 3%;
+	display: flex;
+	font-size: 100%;
+	justify-content:space-between;
+	align-items:center;
+	width: 70%;	
+}
+#question-page-main-section a{
+	text-decoration: none;
+	color: #999;
+}
+#give-answer a {
+	color: #2865a1;
+}
+#question-page-aside-section{
+	width: 30%;
+	margin-top: 2%;
+	display: inline-block;
+	vertical-align: top;
+}
+#heading-of-related-question{
+	padding-bottom: 5%;
+	border-bottom: solid thin;
+	border-color: #dee0e2;
+}
+#related-questions-question{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#related-questions-question > a {
+	text-decoration: none;
+	color: 0000EE;
+}
+#related-questions-question > a:hover{
+	text-decoration: underline;
+
+};

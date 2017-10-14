@@ -1,0 +1,37 @@
+*{
+	margin:0;
+	padding:0;
+
+
+
+}
+header{
+	
+	margin:0;
+	padding:0;
+	display:flex;
+	justify-content: space-between;
+	background-color: yellow;
+}
+h1{
+	padding-top:10px; 
+	width:10%;
+	padding-right:50px;
+	padding-left:20px;
+	margin:0;
+
+}
+#head ul li{
+	display: block;
+	list-style: none;
+    padding-right: 20px;
+    justify-content:space-between;
+    padding-top: 30px;
+}
+#head ul{
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}

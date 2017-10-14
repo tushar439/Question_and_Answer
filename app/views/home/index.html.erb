@@ -1,0 +1,70 @@
+
+<header id ="one">
+   <div id="header-logo">
+   <img src="<%= image_url("logo_design_3397.jpg")%>" id="sign-in-page-quora-image" >
+   </div>
+  <h2 align="center">WELCOME  TO  Q&A!!</h2>
+	<nav id="head">
+		<ul>
+			
+            <li><h4>Hello  <%= current_user.email %></h4></li>
+
+
+<li><h4><%= link_to "Sign Out",destroy_user_session_path,method: :delete %></h4></li>
+   
+
+            <!--<li> <a href="/logout">Logout</li>-->
+		</ul>
+	</nav>
+</header>
+<br>
+<br>
+<div id="hello">
+<%= form_tag(controller: "home", action: "question", method: "post") do %>
+
+	<div id="question1"><h3><%= label_tag("Ask Your Question:")%></h3></div><br>
+	<div id="size">
+	<%= text_area_tag(:content) %></div><br>
+	<%= submit_tag("Submit") %>
+<br>
+<% end %>
+</div>
+<br>
+<br>
+</div>
+<div id="question">
+
+
+
+<% Question.all.each do |q| %>
+		<div style="border: thick solid black;">
+					
+			<h3><font color="white"><u>question</u></font></h3>
+			
+			<h2><%=q.content %></h2>
+			Asked By: <%= User.find(q.user_id).email %>
+			<div style="border: thin solid black;" >
+				<h3><font color="white"><u>Answers</u></font></h3>
+				</div>
+				
+				<% Answer.where(question_id: q.id).each do |a| %>
+					
+
+					 <h3><u>answer:</u></h3> <h2><i><%=a.content %></i></h2>
+					
+					 
+					 Answered By: <%= User.find(a.user_id).email %><br>
+				<% end %>
+
+				<%= form_tag(controller: "home", action: "answer", method: "post") do %>
+
+					<%= label_tag("Post Your Answer: ") %><br>
+					<%= text_area_tag(:content) %><br>
+					<%= hidden_field_tag("question_id", q.id) %>
+					<%= submit_tag("Submit") %>
+					</div>
+
+				<% end %><br><br>
+				
+	<% end %> 
+</div>
